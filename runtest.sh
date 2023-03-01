@@ -23,7 +23,7 @@ get_repo() {
 validate() {
   [[ $DEBUG -eq 1 ]] && set -x
   pushd "$TGT"
-  /opt/puppetlabs/pdk/bin/pdk validate
+  $PDK validate
   popd
 }
 
